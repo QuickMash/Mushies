@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- Langauge -->
+<html lang="en-US">
+
+<head>
+    <!-- Encoding -->
+    <meta charset="utf-8" />
+    <!-- Mobile freindly -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Favcon and Page title -->
+    <title>Mushies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="https://docs.google.com/drawings/d/e/2PACX-1vRxKRpmpvj8u-oIHjJUuQkfCfOyL7klDs3EozBRQKx8TQqQOB-INon2AWQq6SiOqVOCJEZZs4y0_KNE/pub?w=480&h=360">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+    <script>
+const element = document.getElementById("b");
+element.innerHTML = "New Heading";
+        function ahh() {
+            alert("You");
+        }
+
+        function show() {
+            const s = document.getElementById('inputId').value;
+            window.location.replace("https://www.google.com/search?q=" + s);
+        }
+        var deadline = new Date("Jan 5, 2018 15:37:25").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var t = deadline - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + "d " +
+                hours + "h " + minutes + "m " + seconds + "s ";
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <!-- Styles -->
+
+    <style>
+        .banner {
+            display: flex;
+            justify-content: space-around
+        }
+
+        ::-moz-selection {
+            /* Code for Firefox */
+            color: lime;
+            background: #333;
+        }
+
+        ::selection {
+            color: lime;
+            background: #333;
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a {
+            color: blue;
+        }
+
+        header {
+            color: white;
+            text-shadow: 0 0 10px #ff0000, 0 0 10px #0000ff;
+            padding 1px;
+        }
+
+        footer {
+
+            width: 100%;
+            padding: 5px;
+            background: white;
+        }
+
+        article {
+            width: 70%;
+            padding: 10px;
+            background: white;
+        }
+
+        button.select {
+            border: none;
+            height: 100%;
+            width: 25%;
+            background: #333;
+            color: green;
+        }
+
+        button.nav:hover {
+            background: #333;
+        }
+
+        html,
+        body {
+            bottom: 0%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        button.nav {
+            border: none;
+            color: white;
+            background: black;
+            height: 100%;
+            width 25%;
+        }
+
+        input.searchbar {
+            color: black;
+            width: 97%;
+            height 100px;
+            font-size: 15px;
+        }
+
+        button.search {
+            width: 2%;
+            height: 2%;
+            font-size: 15px;
+            color: white;
+            background: none;
+            border: none;
+        }
+
+        nav {
+            padding: 0px;
+            background: black;
+            width: 100%;
+            height: 50px;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+        }
+
+        body {
+            background-color: #1D1F20;
+            padding-top: 40px;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .link {
+            color: blue;
+        }
+
+        .link:hover {
+            color: purple;
+        }
+
+        .link:hover {
+            color: darkblue;
+        }
+
+        .zoom-effect-container {
+            float: left;
+            position: relative;
+            width: 640px;
+            height: 360px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .image-card {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .image-card img {
+            -webkit-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+
+        .zoom-effect-container:hover .image-card img {
+            -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            color: #aaa;
+        }
+
+        .unselectable {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+
+            /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <header>
+        <h1>About Mushies</h1>
+    </header>
+
+    <nav>
+
+        <button class="select" href="#">Home</button>
+        <button class="nav" href="#">Our team</button>
+        <button class="nav" href="#">Projects</button>
+        <button class="nav" href="mailto:asteroidelectco@gmail.com">Contact</button>
+        <div class="curshed">
+            <br>
+            <span class="unselectible">
+                <form id="searchForm" onsubmit="event.preventDefault()">
+                    <input class="searchbar" type="search" name="searchField" id="inputId" placeholder="Search | Powered by Google">
+                    <button title="Search on Google" class="search" onclick="show()"><span class="material-symbols-outlined">search
+                        </span></button>
+            </span>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- A Search form is another common non-linear way to navigate through a website. -->
+    <br>
+    <!-- Here is our page's main content -->
+    <main>
+        <!-- It contains an article -->
+        <br>
+        <br>
+        <center><span id="b">sd</span></center>
+        <right>
+            <div style="width: 50%"></div>
+            <div class="banner">
+                <br>
+                <br>
+                <br>
+
+                <article>
+                    <h2>What do they look like</h2>
+
+                    <p>
+                        Mushies are
+                    </p>
+
+                    <h2>Where do they live</h2>
+
+                    <p>
+
+                    </p>
+
+                    <p>
+                        Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+                        dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+                        Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+                    </p>
+
+                    <h2>How they survive</h2>
+
+                    <p>
+                        Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+                        soclis natoque penatibus et manis dis parturient montes, nascetur
+                        ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+                        facilisis semper ac in est.
+                    </p>
+
+                    <p>
+                        Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+                        tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+                        ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+                        diam iaculis velit, is fringille sem nunc vet mi.
+                    </p>
+                    <h2>To sum it up</h2>
+                    <p>Mushies are an incredible species of spider found on [PlanetName]. They have the unique ability to grow mushrooms on their backs, making them a valuable and intriguing member of the arachnid family. Mushies can be found in a variety of dark and damp caves on virtually anywhere on [PlanetName]. They prefer to settle in these cold and damp environments due to their sensitivity to heat and light. Mushies can be quite friendly when approached properly and can even make for excellent pets. Despite their small size, these little creatures have a big appetite and prefer to feed on insects and other small animals. They are an incredibly fascinating species and offer an incredible insight into the natural world.</p>
+                </article>
+                <div class="wrapper">
+                    <div class="zoom-effect-container">
+                        <div class="image-card">
+                            <img onclick="ahh()" title="Click to veiw more images" src="https://docs.google.com/drawings/d/e/2PACX-1vRxKRpmpvj8u-oIHjJUuQkfCfOyL7klDs3EozBRQKx8TQqQOB-INon2AWQq6SiOqVOCJEZZs4y0_KNE/pub?w=480&h=360" />
+                        </div>
+                    </div>
+                    <div class="zoom-effect-container">
+                        <div class="image-card">
+    </main>
+    </div>
+    <br>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br><br>
+    <br><br><br>
+    <br><br>
+    <br>
+    <br>
+    <footer>
+        <center>
+            <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /><br></a>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Tanner Curr</span> is licensed under a <a rel="license" class="link" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+        </center>
+        <noscript>
+            <p>This page works best with <span title="A scripting language that allows things like redirects">JavaScript</span> enabled
+        </noscript>
+    </footer>
+</body>
+
+</html>
