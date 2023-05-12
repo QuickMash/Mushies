@@ -171,3 +171,7 @@
             -ms-user-select: none;
             user-select: none;
         }
+.zoom:hover{
+            -webkit-transform: scale(2.00);
+            transform: scale(2.00);
+        }
