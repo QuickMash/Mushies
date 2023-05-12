@@ -1,9 +1,4 @@
-const element = document.getElementById("b");
-element.innerHTML = "New Heading";
-        function ahh() {
-            alert("You");
-        }
-
+        document.getElementById("brodcast").innerHTML = "It works";
         function show() {
             const s = document.getElementById('inputId').value;
             window.location.replace("https://www.google.com/search?q=" + s);
@@ -23,6 +18,3 @@ element.innerHTML = "New Heading";
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
-function update() {
-        document.getElementById("brodcast").innerHTML = "It works";
-}
