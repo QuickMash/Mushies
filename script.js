@@ -23,3 +23,6 @@ element.innerHTML = "New Heading";
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+function update() {
+        document.getElementById("brodcast").innerHTML = "It works";
+}
