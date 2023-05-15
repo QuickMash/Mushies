@@ -104,9 +104,10 @@
         }
 
         body {
-            background-color: #1D1F20;
             padding-top: 40px;
             font-family: sans-serif;
+            background: rgb(69,226,46);
+            background: linear-gradient(261deg, rgba(69,226,46,1) 0%, rgba(0,109,252,1) 100%);
         }
 
         .wrapper {
