@@ -170,3 +170,9 @@
             -webkit-transform: scale(2.00);
             transform: scale(2.00);
         }
+.slidein {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
