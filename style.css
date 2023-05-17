@@ -100,9 +100,24 @@
             font-family: Arial, Helvetica, sans-serif;
             padding-top: 40px;
             font-family: sans-serif;
-            background: rgb(69,226,46);
-            background: linear-gradient(261deg, rgba(69,226,46,1) 0%, rgba(0,109,252,1) 100%);
-        }
+}
+body {
+  background: linear-gradient(45deg, #FFC837, #FF3B44, #00D9D9, #7D12FF);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
         .wrapper {
             width: 1280px;
