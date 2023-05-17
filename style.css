@@ -1,194 +1,48 @@
-.banner {
-            background: white;
-            display: flex;
-            justify-content: space-around
-        }
-
-        ::-moz-selection {
-            /* Code for Firefox */
-            color: lime;
-            background: rgb(34,193,195);
-            background: linear-gradient(260deg, rgba(34,193,195,1) 0%, rgba(11,255,0,1) 100%);
-        }
-
-        ::selection {
-            color: lime;
-            background: #333;
-        }
-
-        a:hover {
-            color: purple;
-        }
-
-        a:visited {
-            color: purple;
-        }
-
-        a {
-            color: blue;
-        }
-
-        header {
-            color: white;
-            text-shadow: 0 0 10px #ff0000, 0 0 10px #0000ff;
-            padding 1px;
-        }
-
-        footer {
-
-            width: 100%;
-            padding: 5px;
-            background: white;
-        }
-
-        article {
-            width: 70%;
-            padding: 10px;
-            background: white;
-        }
-
-        button.select {
-            border: none;
-            height: 100%;
-            width: 25%;
-            background: #333;
-            color: green;
-        }
-        button.nav:hover {
-            background: none;
-        }
-
-        html,
-        body {
-            bottom: 0%;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-
-        button.nav {
-            border: none;
-            color: white;
-            background: black;
-            height: 100%;
-            width 25%;
-        }
-
-        input.searchbar {
-            color: black;
-            width: 94%;
-            height 100px;
-            font-size: 15px;
-        }
-
-        button.search {
-            width: 2%;
-            height: 2%;
-            font-size: 15px;
-            color: white;
-            background: none;
-            border: none;
-        }
-
-        nav {
-            padding: 0px;
-            background: black;
-            width: 100%;
-            height: 50px;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 40px;
-            font-family: sans-serif;
-}
 body {
-  background: linear-gradient(45deg, #FFC837, #FF3B44, #00D9D9, #7D12FF);
-  background-size: 800% 800%;
-  animation: gradientAnimation 15s ease infinite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  animation: backgroundAnimation 10s linear infinite;
 }
 
-        .wrapper {
-            width: 1280px;
-            margin: 0 auto;
-        }
+@keyframes backgroundAnimation {
+  0% { background-color: #f0f0f0; }
+  50% { background-color: #e0e0e0; }
+  100% { background-color: #f0f0f0; }
+}
 
-        .link {
-            color: blue;
-        }
+.content {
+  text-align: center;
+}
 
-        .link:hover {
-            color: purple;
-        }
+h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-        .link:hover {
-            color: darkblue;
-        }
+p {
+  font-size: 24px;
+  color: #666;
+  line-height: 1.5;
+}
 
-        .zoom-effect-container {
-            float: right;
-            position: relative;
-            width: 640px;
-            height: 360px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
+.animated-text {
+  animation: textAnimation 3s ease-in-out infinite;
+}
 
-        .image-card {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-        }
-
-        .image-card img {
-            -webkit-transition: 0.4s ease;
-            transition: 0.4s ease;
-        }
-
-        .zoom-effect-container:hover .image-card img {
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-        }
-
-        a {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            width: 100%;
-            color: #aaa;
-        }
-
-        .unselectable {
-            -moz-user-select: -moz-none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-
-            /*
-     Introduced in IE 10.
-     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-   */
-            -ms-user-select: none;
-            user-select: none;
-        }
-.zoom:hover{
-            -webkit-transform: scale(2.00);
-            transform: scale(2.00);
-        }
-.slidein {
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+@keyframes textAnimation {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
 }
